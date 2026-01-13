@@ -19,7 +19,7 @@ def send_sticker(group_id):
     try:
         line_bot_api.push_message(
             group_id,
-            StickerSendMessage(package_id='446', sticker_id='1988') # รูปหมี Brown
+            StickerSendMessage(package_id='11538', sticker_id='51626501') # รูปคนยกนิ้ว CHOCO&Friend
         )
     except Exception as e:
         print(f"Error: {e}")
