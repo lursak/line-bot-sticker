@@ -51,8 +51,8 @@ def handle_image(event):
     if group_id in timers:
         timers[group_id].cancel()
 
-    # เริ่มนับถอยหลังใหม่ 120 วินาที (2 นาที)
-    t = threading.Timer(120.0, send_sticker, args=[group_id])
+    # เริ่มนับถอยหลังใหม่ 180 วินาที (3 นาที)
+    t = threading.Timer(180.0, send_sticker, args=[group_id])
     timers[group_id] = t
     t.start()
 
