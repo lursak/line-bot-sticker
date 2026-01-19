@@ -26,7 +26,9 @@ def send_sticker(group_id):
     
     if group_id in timers:
         del timers[group_id]
-
+@app.route("/")
+def home():
+    return "OK", 200
 @app.route("/callback", methods=['POST'])
 def callback():
     signature = request.headers.get('X-Line-Signature')
